@@ -40,7 +40,7 @@ a `subdialog`.
   
     <message>I'm so glad that you agree.</message>
       <answers>
-        <answer goto="quit" type="next>Yes, good bye.</answer>
+        <answer goto="quit" type="next">Yes, good bye.</answer>
       </answers>
   
   </dialog>
