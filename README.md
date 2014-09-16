@@ -36,7 +36,7 @@ a `subdialog`.
     
   </dialog>
   
-  <dialog id="agreement>
+  <dialog id="agreement">
   
     <message>I'm so glad that you agree.</message>
       <answers>
