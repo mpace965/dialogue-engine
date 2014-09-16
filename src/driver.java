@@ -4,7 +4,7 @@ public class Driver
 {
 	public static void main(String[] args) throws XPathExpressionException
 	{		
-		Dialogue recept = new Dialogue("./res/recept.xml");
+		Dialogue recept = new Dialogue("../res/recept.xml");
 		recept.start();
 	}
 }
