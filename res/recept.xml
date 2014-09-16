@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<tree character="recept">
+	
+	<dialog id="root">
+		
+		<message>What can I help you with?</message>
+		<answers>
+			<answer goto="valuables" type="next">Where are the valuables? Not that I'm going to steal anything...</answer>
+			<answer goto="janitor" type="next">What's the deal with that Janitor guy?</answer>
+			<answer goto="reapers" type="next">What can you tell me about the Reapers?</answer>
+			<answer goto="quit" type="next">Well, see ya!</answer>
+		</answers>
+		
+	</dialog>
+	
+	<dialog id="valuables">
+		
+		<message>In the restricted vault. Its restricted. It's also a vault</message>
+		<answers>
+			<answer goto="more" type="sub">Can you tell me more?</answer>
+			<answer goto="root" type="next">Can I ask you something else?</answer>
+		</answers>
+		
+		<subdialog id="more">
+			<message>Nope, I'm sorry. Do you need anything else?</message>
+			<answers>
+				<answer goto="root" type="next">Actually, I do.</answer>
+				<answer goto="quit" type="next">Nope, thanks for your help.</answer>
+			</answers>
+		</subdialog>
+		
+	</dialog>
+	
+	<dialog id="janitor">
+		
+		<message>We don't have a Janitor.</message>
+		<answers>
+			<answer goto="why" type="sub">And why is that?</answer>
+			<answer goto="unusual" type="sub">That's unusual...</answer>
+		</answers>
+		
+		<subdialog id="why">
+			<message>It's a long story. Do you need anything else?</message>
+			<answers>
+				<answer goto="root" type="next">Actually, I do.</answer>
+				<answer goto="quit" type="next">Nope, thanks for your help.</answer>
+			</answers>
+		</subdialog>
+	
+		<subdialog id="unusual">
+			<message>It is. Do you need anything else?</message>
+			<answers>
+				<answer goto="root" type="next">Actually, I do.</answer>
+				<answer goto="quit" type="next">Nope, thanks for your help.</answer>
+			</answers>
+		</subdialog>
+		
+	</dialog>
+	
+	<dialog id="reapers">
+		
+		<message>Just that you'll need a strong team to make Cerberus proud. And save the earth.</message>
+		<answers>
+			<answer goto="knowledge" type="sub">Thank you for that amazing peice of knowledge.</answer>
+			<answer goto="root" type="next">Thank you, you elusive person, you!</answer>
+		</answers>
+		
+		<subdialog id="knowledge">
+			<message>You are very welcome. Anything else you need?</message>
+			<answers>
+				<answer goto="root" type="next">Actually, there is something.</answer>
+				<answer goto="quit" type="next">Nope, thanks for your help.</answer>
+			</answers>
+		</subdialog>
+		
+		<subdialog id="elusive">
+			<message>You are quite welcome! Anything else I can help with?</message>
+			<answers>
+				<answer goto="root" type="next">Actually, there is something.</answer>
+				<answer goto="quit" type="next">Nope, thanks for your help.</answer>
+			</answers>
+		</subdialog>
+		
+	</dialog>
+</tree>
